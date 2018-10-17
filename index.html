@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>
-<form>
-  <input type="text" name="Email" value="" placeholder="Email">
-  <input type="text" name="GitHub Username" value="" placeholder="GitHub Username">
-  <input type="text" name="Password" value="" placeholder="Password">
-  <button type="submit">Submit</button>
-  <label for="submit">Click to submit credentials</label<br>
+<html lang="en" dir="ltr">
+<head>
+<title>Please Signup Please</title>
+</head>
+<body>
+<form class="Sign-Up-Please">
+  <label for="Email">Email</label>
+  <input type="text" name="Email" value="" id="Email" required>
+  <label for="GitHub-Username">GitHub Username</label>
+  <input type="text" name="GitHub Username" value="" id="GitHub-Username" required>
+  <label for="Password">Password</label>
+  <input type="text" name="Password" value="" id="Password" minlength="7" required>
+  <br><br>
   <fieldset>
-  <legend>Package</legend>
+  <legend>Pick Your Package</legend>
     <input id="Enterprise" type="radio" name="Package" value="Enterprise">
-    <label for="Enterprise">Enterprise</label><br>
+    <label for="Enterprise">Enterprise</label>
 
     <input id="Pro" type="radio" name="Package" value="Pro">
-    <label for="Pro">Pro</label><br>
+    <label for="Pro">Pro</label>
 
     <input id="Free" type="radio" name="Package" value="Free">
-    <label for="Free">Free</label><br>
+    <label for="Free">Free</label>
   </fieldset>
-    <input id="Remember Me" type="checkbox" name="Remember Me" value="Remember Me">
-    <label for="RememberMe">Remember Me</label<br>
+    <br>
+
+    <button type="submit" id ="submit">Submit</button>
+    <label for="submit">Click to submit credentials</label>
+    <br>
+    <input id="Remember-Me" type="checkbox" name="Remember-Me" value="Remember-Me">
+    <label for="Remember-Me">Remember Me</label>
 </form>
+</body>
 </html>
